@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snapfile"
+version = "0.1.0"
+description = "Your screenshot graveyard files itself — locally, with Gemma vision."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["gemma", "vision", "ollama", "screenshots", "offline", "hacktoberfest"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities",
+]
+
+# Deliberately zero runtime dependencies: stdlib only.
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+snapfile = "snapfile.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/itzneel05/snapfile"
+Issues = "https://github.com/itzneel05/snapfile/issues"
+
+[tool.setuptools.packages.find]
+include = ["snapfile*"]

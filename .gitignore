@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local artifacts
+*.log
+.DS_Store
+
+# Never commit credentials (there are none, but check anyway)
+.env
+.env.*
+
+# Editors
+.idea/
+.vscode/
+
+# Generated output
+sorted/
